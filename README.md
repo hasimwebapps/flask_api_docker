@@ -28,3 +28,6 @@ Request :
 - Header :
     - Authorization: Bearer {{your_secret_key}}
 
+
+# Migrate Database
+- When running docker-compose, user data migration will be automatically executed via init-db.js

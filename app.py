@@ -1,20 +1,6 @@
 from flask import Flask, jsonify, request
-import pymongo
 import logging
-import datetime
-import json
-import uuid
-import jwt
-import datetime
-from flask_jwt_extended import create_access_token
-from flask_jwt_extended import create_refresh_token
-from flask_jwt_extended import get_jwt_identity
-from flask_jwt_extended import jwt_required
-from flask_jwt_extended import JWTManager
 
-from werkzeug.security import generate_password_hash, check_password_hash
-from functools import wraps
-from bson.objectid import ObjectId
 
 from src.handler import utils
 from src.handler import topup, auth, transaction, payment, profile, transfer
@@ -26,7 +12,6 @@ app.debug = True
 
 @app.route('/register', methods=['POST'])
 def register():
-    db = ""
     ret = utils.generate_ret()
     try:
         ret = auth.register(request)
