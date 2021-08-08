@@ -13,7 +13,7 @@ db:
   container_name: mnc_api_db_container
   hostname: test_mongodb
   environment:
-    - MONGO_INITDB_DATABASE=animal_db
+    - MONGO_INITDB_DATABASE=example_data
     - MONGO_INITDB_ROOT_USERNAME=root
     - MONGO_INITDB_ROOT_PASSWORD=pass
   volumes:
