@@ -8,7 +8,7 @@
 
 ## http client
 
-- run http request in client.http
+- Run http request in client.http
 1. Register
 2. Login
 3. Top Up
