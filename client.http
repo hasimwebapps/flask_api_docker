@@ -1,0 +1,79 @@
+### user list
+GET http://localhost:5000/user_list
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### 1. user register
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "address": "Jiban",
+  "first_name": "Aldy",
+  "last_name": "Abdat",
+  "phone_number": "081125558",
+  "pin": "123456"
+}
+
+### 2. user login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "phone_number": "08123456",
+  "pin": "123456"
+}
+
+### 3. user topup
+POST http://localhost:5000/topup
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "amount_top_up": 100000
+}
+
+### 4. user pay
+POST http://localhost:5000/pay
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "amount": 50000,
+  "remarks": "Beli Paket 50k"
+}
+
+### 5. user transfer
+POST http://localhost:5000/transfer
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "target_user": "3a1192d8-c9d8-4d88-bdd6-c4fe2b49d067",
+  "amount": 30000,
+  "remarks": "Hadiah Ultah"
+}
+
+
+### 6. user transactions
+POST http://localhost:5000/transactions
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+
+### 7. user profile update
+PUT http://localhost:5000/profile
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "first_name": "Wahyu",
+  "last_name": "Cepiy",
+  "address": "Masjid Annur Tengah"
+}
+
+
+
+
+
