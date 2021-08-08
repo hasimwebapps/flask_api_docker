@@ -9,6 +9,13 @@
 ## http client
 
 - run http request in client.http
+1. Register
+2. Login
+3. Top Up
+4. Payment
+5. Transfer
+6. Report Transactions
+7. Update Profile
 
 # API Spec
 
